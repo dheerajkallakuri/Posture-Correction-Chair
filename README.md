@@ -7,7 +7,7 @@ This project aims to improve users' sitting posture by providing real-time feedb
 ## Hardware Requirements
 
 - **Chair with Integrated Sensors**: The chair is equipped with six sensors to calculate the user's posture.
-- **Microcontroller**: For processing sensor data and providing feedback.
+- **Microcontroller**: This is used to process sensor data and provide feedback.
 - **Feedback Mechanism**: This can be auditory, visual, or haptic feedback to alert the user about their posture.
 
 <table>
@@ -21,12 +21,12 @@ This project aims to improve users' sitting posture by providing real-time feedb
 
 The posture correction chair works by:
 1. **Sensor Data Collection**: Six sensors installed in the chair continuously monitor the user's posture.
-2. **State Definition**: The collected posture data is used to define the user's current state.
+2. **State Definition**: The collected posture data defines the user's current state.
 3. **Policy Creation**: A reinforcement learning algorithm, utilizing the Markov Decision Process (MDP), is used to map states to actions (feedback recommendations).
 4. **Feedback Generation**: Based on the policy, the system generates feedback to encourage the user to adopt an ideal sitting posture.
 
 ### Setup
-- Load `sesnor_fusion.ino` in Arduino connect to computing device.
+- Load `sesnor_fusion.ino` in Arduino connected to the computing device.
 - Run `pcc.gui` on the computing device.
 
 ### Reinforcement Learning
@@ -49,7 +49,7 @@ This section outlines the key components and functionalities of the graphical us
   - **CALIBRATION IN PROGRESS**: Shown when the calibration button is clicked while the user is in a good posture.
   - **CALIBRATION IS DONE**: Shown once the calibration process for a good posture is completed.
   - **No one is sitting**: Displayed when sensor readings are between 0 and 2, indicating the chair is not in use.
-  - **Ideal Position**: Displayed when the user is sitting in the calibrated ideal posture.
+  - **Ideal Position**: Displayed when the user sits in the calibrated ideal posture.
   - **Set of Actions**: Displayed when the user is not in the ideal position, providing specific actions such as "shift left," "shift right," or "shift back" to help the user correct their posture.
 
 #### Pose Textbox
