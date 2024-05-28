@@ -33,7 +33,7 @@ The posture correction chair works by:
 
 Reinforcement learning (RL) is a reward-driven learning algorithm where agents make decisions to maximize cumulative rewards. In this project:
 - **Markov Decision Process (MDP)**: Used to map states (postures) to actions (feedback).
-- **Policy**: Defines the optimal state-action mapping to ensure users maintain an ideal posture.
+- **Policy**: Defines the optimal state-action mapping to ensure users maintain an ideal posture using the Policy iteration algorithm.
 
 ### Graphical User Interface Overview
 
